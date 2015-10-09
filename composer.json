@@ -6,7 +6,6 @@
 	"require": {
 		"laravel/framework": "4.2.*",
 		"zizaco/entrust": "1.2.*@dev",
-		"intervention/image": "~2.0",
 		"barryvdh/laravel-ide-helper": "~1.11"
 	},
 	"require-dev": {

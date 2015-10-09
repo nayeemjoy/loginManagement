@@ -2,9 +2,9 @@
 
 return [
 	'names' =>[
-		'siteName' => 'Delivery'
+		'siteName' => 'Template'
 	],
 	'roles' =>[
-		'Admin' => 'Admin'
+		'admin' => 'admin'
 	]
 ];

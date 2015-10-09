@@ -90,7 +90,7 @@ Route::filter('csrf', function()
 });
 
 Route::filter('admin',function(){
-	if(! Entrust::hasRole(Config::get('customConfig.roles.Admin'))){
+	if(! Entrust::hasRole(Config::get('customConfig.roles.admin'))){
 		return Redirect::to('/');
 	}
 });
