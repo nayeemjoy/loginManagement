@@ -15,7 +15,7 @@ return array(
 	|
 	*/
 
-	'driver' => 'smtp',
+	'driver' => 'mailgun',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -28,7 +28,7 @@ return array(
 	|
 	*/
 
-	'host' => 'smtp.gmail.com',
+	'host' => 'smtp.mailgun.org',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'infancyit@gmail.com', 'name' => 'Monitor Delivery'),
+	'from' => array('address' => 'infancy.itbd@gmail.com', 'name' => 'Infancy Template'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return array(
 	|
 	*/
 
-	'username' => 'infancyit@gmail.com',
+	'username' => 'postmaster@sandbox175d9abbdfa34087b499278799f86447.mailgun.org',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return array(
 	|
 	*/
 
-	'password' => '!@#123!@#',
+	'password' => 'cbf548e2d27cbb1484f7cbf895267eb3',
 
 	/*
 	|--------------------------------------------------------------------------

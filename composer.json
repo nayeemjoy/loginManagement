@@ -6,7 +6,8 @@
 	"require": {
 		"laravel/framework": "4.2.*",
 		"zizaco/entrust": "1.2.*@dev",
-		"barryvdh/laravel-ide-helper": "~1.11"
+		"barryvdh/laravel-ide-helper": "~1.11",
+		"guzzlehttp/guzzle": "~4.0"
 	},
 	"require-dev": {
     	"way/generators": "~2.0",
