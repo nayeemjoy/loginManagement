@@ -12,7 +12,7 @@
                   <!-- user login dropdown start-->
                   <li class="dropdown">
                       <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                          <img alt="" src="img/avatar1_small.jpg">
+                          <img alt="" src="{{asset('img/avatar1_small.jpg')}}">
                           <span class="username">Jhon Doue</span>
                           <b class="caret"></b>
                       </a>
