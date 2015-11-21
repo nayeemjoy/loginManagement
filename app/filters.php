@@ -94,3 +94,28 @@ Route::filter('admin',function(){
 		return Redirect::to('/');
 	}
 });
+Route::filter('oauth',function(){
+	$token = Input::get('access_token');
+	if(isset($token)){
+		$access_token = AccessToken::whereAccessToken($token)->first();
+		if(!$access_token){
+			return Response::json([
+				'error' => 'Unauthorized',
+				'status' => 401
+			]);		
+		}
+		$date = Carbon::parse($access_token->updated_at);
+		if($date->diffInMinutes() >= $access_token->expire_time){
+			return Response::json([
+				'error' => 'Expire',
+				'status' => 400
+			]);
+		}
+	}
+	else{
+		return Response::json([
+			'error' => 'Access Token Required',
+			'status' => 400
+		]);
+	}
+});

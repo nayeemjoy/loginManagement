@@ -35,10 +35,10 @@ Route::group(array('before' => 'auth'), function()
 
 Route::group(array('before' => 'oauth','prefix' => 'api/v1'), function()
 {
-
+	Route::get('/',function(){
+		$owner = AuthController::getOwner();
+		return $owner;
+	});
 });
 
-Route::post('oauth/access_token', function()
-{
-	// Access Token Will be generated
-});
+Route::post('oauth/access_token',['as' => 'logout', 'uses' => 'AuthController@issueAccessToken']);
