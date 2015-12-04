@@ -121,6 +121,7 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+		'Yangqi\Htmldom\HtmldomServiceProvider',
 		/* Additional Providers */
 		'Zizaco\Entrust\EntrustServiceProvider', // Entrust Provider for roles
 		/* Uncomment for use in development */
@@ -193,8 +194,9 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-		'Entrust'          => 'Zizaco\Entrust\EntrustFacade',
+		'Entrust'         => 'Zizaco\Entrust\EntrustFacade',
 		'Carbon'  		  => 'Carbon\Carbon',
+		'Htmldom' 		  => 'Yangqi\Htmldom\Htmldom',
 	),
 
 );

@@ -42,3 +42,7 @@ Route::group(array('before' => 'oauth','prefix' => 'api/v1'), function()
 });
 
 Route::post('oauth/access_token',['as' => 'logout', 'uses' => 'AuthController@issueAccessToken']);
+
+Route::get('/test',function(){
+	
+});
